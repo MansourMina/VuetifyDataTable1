@@ -4,15 +4,13 @@
       <div class="d-flex align-center">
         <a href="https://www.imdb.com/movies-in-theaters/" target="_blank">
           <v-img
-
             alt="Vuetify Logo"
-            class="shrink mr-2 mt-16"
+            class="shrink mr-2 mt-16 hidden-md-and-down"
             contain
             src="@/assets/camera.jpg"
             transition="scale-transition"
             width="80"
             target="_blank"
-            
           />
         </a>
 
