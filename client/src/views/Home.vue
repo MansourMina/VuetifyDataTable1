@@ -1,9 +1,9 @@
 <template>
   <v-container>
     <v-alert border="right" color="blue-grey" dark class="ma-10">
-      Rent selected movies: {{ selected.map(el => el.title).toString() }}
+      Rent selected movies: {{ selected.map((el) => el.title).toString() }}
     </v-alert>
-    <v-card >
+    <v-card>
       <v-card-title>
         <v-text-field
           v-model="search"
@@ -16,11 +16,11 @@
       <v-data-table
         :headers="headers"
         :items="movies"
-        itmes-key="title"
+        itmes-key="id"
+        :search="search"
         v-model="selected"
-        :single-select="singleSelect"
         show-select
-        :footer-props= "{itemsPerPageOptions: [6,12,18]}"
+        :footer-props="{ itemsPerPageOptions: [6, 12, 18] }"
       >
       </v-data-table>
     </v-card>
